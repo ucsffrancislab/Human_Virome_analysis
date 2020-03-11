@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-
+# This script transform fastq file to fasta format filtering short reads
+# input : fastq file
+# output : fasta file
 import sys
 argvs = sys.argv
 min_seq_len = 40
