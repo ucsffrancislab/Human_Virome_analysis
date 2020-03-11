@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-
+# this script count the number of reads mapped to features from blast result
+# input : two blastn result (output format 6) for paired reads and threshold E_value 
+# output : tab delimited counts of reads assigned to target
+# 
 import sys,re
 argvs = sys.argv
 
