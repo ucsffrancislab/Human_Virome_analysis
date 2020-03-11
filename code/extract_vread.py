@@ -1,4 +1,8 @@
 #!/usr/bin/env python2
+#This script extract reads assigned to features from blast_search
+# Input: blast_result(output format 6)
+# Output: query fasta file for previous blast
+#
 import sys
 
 blast_res = sys.argv[1]
