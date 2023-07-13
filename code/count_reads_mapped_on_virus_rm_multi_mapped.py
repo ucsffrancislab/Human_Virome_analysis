@@ -6,12 +6,14 @@
 import sys,re
 argvs = sys.argv
 
-run_Id = re.sub(r'.+\/(SRR[0-9]+)_.+',r'\1',argvs[1])
+#	Jake - this only works if you have SRR data. Revived 4th argument for sample name / run id
+#run_Id = re.sub(r'.+\/(SRR[0-9]+)_.+',r'\1',argvs[1])
 
 
 f1 = open(argvs[1])
 f2 = open(argvs[2])
 max_Eval = float(argvs[3])
+run_Id = argvs[4]
 
 score_d1 = {}
 score_d2 = {}
